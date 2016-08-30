@@ -1,0 +1,21 @@
+{
+  "name": "web-bluetooth-utils",
+  "version": "1.0.0",
+  "description": "Convenience functions for Web Bluetooth",
+  "license": "Apache-2.0",
+  "repository": "beaufortfrancois/web-bluetooth-utils",
+  "author": {
+    "name": "Francois Beaufort",
+    "email": "beaufort.francois@gmail.com",
+    "url": "https://plus.google.com/+FrancoisBeaufort"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "bluetooth"
+  ]
+}
