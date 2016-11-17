@@ -1,6 +1,6 @@
 {
   "name": "web-bluetooth-utils",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Convenience functions for Web Bluetooth",
   "license": "Apache-2.0",
   "repository": "beaufortfrancois/web-bluetooth-utils",
