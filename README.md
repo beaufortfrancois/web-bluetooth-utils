@@ -10,16 +10,11 @@ npm install --save web-bluetooth-utils
 
 ## Example usage
 
-```diff
- navigator.bluetooth.requestDevice({ filters: [{ services: ['battery_service'] }] })
--.then(device => device.gatt.connect())
--.then(server => server.getPrimaryService('battery_service'))
--.then(service => service.getCharacteristic('battery_level'))
--.then(characteristic => characteristic.readValue())
-+.then(device => device.readUint8CharacteristicValueFromPrimaryService('battery_service', 'battery_level', 0 /* offset */))
- .then(value => {
--  console.log('Battery percentage is ' + value.getUint8(0));
-+  console.log('Battery percentage is ' + value));
+```js
+navigator.bluetooth.requestDevice({ filters: [{ services: ['battery_service'] }] })
+.then(device => device.readUint8CharacteristicValueFromPrimaryService('battery_service', 'battery_level', 0 /* offset */))
+.then(value => {
+  console.log('Battery percentage is ' + value));
  });
 ```
 
